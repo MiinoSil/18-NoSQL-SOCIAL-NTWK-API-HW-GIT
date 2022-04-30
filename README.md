@@ -5,6 +5,10 @@
 
 [GitHub Repo](https://github.com/MiinoSil/18-NoSQL-SOCIAL-NTWK-API-HW-GIT)
 
+[HEROKU Deploy](https://nosql-social-media-backend-api.herokuapp.com/)
+
+[HEROKU Repo](https://git.heroku.com/nosql-social-media-backend-api.git)
+
 ## Table of Contents
 
 - [Description](#description)
