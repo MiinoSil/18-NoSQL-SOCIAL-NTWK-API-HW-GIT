@@ -67,6 +67,8 @@ npm i
 ```
 npm start
 ```
+3. Using a browser, or INSOMNIA, navigate to http://localhost:3001/api/ or [HEROKU deployment](https://nosql-social-media-backend-api.herokuapp.com/api/)
+    - routes are accessed at ```/api/users``` and ```/api/thoughts```
 
 ## Walkthrough Videos
 
