@@ -1,17 +1,23 @@
-# 18 NoSQL: Social Network API
+# 18 NoSQL: Social Network API with Walkthrough using INSOMNIA
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Links
 
 [GitHub Repo](https://github.com/MiinoSil/18-NoSQL-SOCIAL-NTWK-API-HW-GIT)
 
 ## Table of Contents
 
-[Description](#description)
-[User Story](#user-story)
-[Acceptance Criteria](#acceptance-criteria)
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [NPM requirements](#npm-requirements)
+- [Usage](#usage)
+- [Walkthrough](#walkthrough-videos)
+- [Credits](#credits-and-author)
+- [License](#license)
 ## Description
 
-MongoDB is a flexible database that works with unstructured data in large quantities and speed. This backend API is a social network web application where a user can share thoughts, react to other users' thoughts, create a friend list. It uses Express.js, MongoDB, and Mongoose.
+MongoDB is a flexible database that works with unstructured data in large quantities and speed. This backend API is a social network web application where a user can share thoughts, react to other users' thoughts, create a friend list. It uses Express.js, MongoDB, and Mongoose. A video walkthrough displays interaction with API using INSOMNIA. 
 
 ### User Story
 
@@ -35,43 +41,45 @@ WHEN I test API POST and DELETE routes in Insomnia
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 ```
 
+## NPM requirements
+| NPM Package | code to run |
+| ----------- | ----------- |
+| Express.js | ```npm i express``` |
+| Mongoose | ```npm i mongoose``` |
+
+If cloned from REPO with package.json, just run the following code:
+```
+npm install
+``` 
+OR 
+```
+npm i
+```
+
+## Usage
+
+1. Install required NPM packages
+2. Via command line or terminal:
+```
+npm start
+```
+
 ## Walkthrough Videos
 
-| Code | Video |
-| ------ | ------- |
-| npm i |  |
+| Description | Video |
+| :---------: | :---: |
+| Install NPM and starting server</br>[Screencastify Original](https://drive.google.com/file/d/1ljFNsnr1s3ZIov4TlwfHI4gpJchrnHdd/view) | <img src="./Assets/18-nosql-start-server-demo.gif" alt="Install NPM, start server" width="1000"> |
+| POST, GET, PUT, DELETE: Adding users, getting all users, getting a single user, updating username by Id, deleting user by Id</br>[Screencastify Original](https://drive.google.com/file/d/1MnW8zB7kVesegw82L8GYglRb6pr6N_jT/view)  | <img src="./Assets/18-nosql-POST-GET-PUT-DELETE-USER-demo.gif" alt="POST, GET, PUT, DELETE USER" width="1000"> |
+| POST, GET, PUT, DELETE: Adding thoughts, getting all thoughts, getting a single thought, updating thoughts text, deleting thoughts</br>[Screencastify Original](https://drive.google.com/file/d/1p5q1TUwaffRGY30WSHwzWzL3JLEO2qsO/view) | <img alt="POST, GET, PUT, DELETE Thought" src="./Assets/18-nosql-POST-GET-PUT-DELETE-thoughts-demo.gif" width="1000"> |
+| POST, DELETE: Adding and deleting reactions</br>[Screencastify Original](https://drive.google.com/file/d/12qujef1F87G37CjkyZgsHHVW5yBczqhi/view) | <img src="./Assets/18-nosql-POST-DELETE-reaction-demo.gif" alt="POST, DELETE a reaction" width="1000"> |
+| POST, DELETE: Adding and deleting friends</br>[Screencastify Original](https://drive.google.com/file/d/1RezAispmbstNgtcC7R7tbsJ52lnltZfP/view) | <img src="./Assets/18-nosql-friendsList-POST-DELETE-demo.gif" alt="POST, DELETE friends list" width="1000"> |
 
 ## Credits and Author
 
 [GitHub Profile](https://github.com/MiinoSil)
-### Walkthrough Video: 37%
 
-* A walkthrough video that demonstrates the functionality of the social media API must be submitted, and a link to the video should be included in your README file.
+## License
 
-  * The walkthrough video must demonstrate how to start the application’s server.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  * The walkthrough video must demonstrate GET routes for all users and all thoughts being tested in Insomnia.
-
-  * The walkthrough video must demonstrate GET routes for a single user and a single thought being tested in Insomnia.
-
-  * The walkthrough video must demonstrate POST, PUT, and DELETE routes for users and thoughts being tested in Insomnia.
-
-  * Walkthrough video must demonstrate POST and DELETE routes for a user’s friend list being tested in Insomnia.
-
-  * Walkthrough video must demonstrate POST and DELETE routes for reactions to thoughts being tested in Insomnia.
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * Uses the [Mongoose package](https://www.npmjs.com/package/mongoose) to connect to a MongoDB database.
-
-  * Includes User and Thought models outlined in the homework instructions.
-
-  * Includes schema settings for User and Thought models as outlined in the homework instructions.
-
-  * Includes Reactions as the `reaction` field's subdocument schema in the Thought model.
-
-  * Uses functionality to format queried timestamps properly.
-
-
+[LICENSE](./LICENSE)
