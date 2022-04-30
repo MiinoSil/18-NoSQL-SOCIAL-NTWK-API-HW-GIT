@@ -48,8 +48,6 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 * A walkthrough video that demonstrates the functionality of the social media API must be submitted, and a link to the video should be included in your README file.
 
-  * The walkthrough video must show all of the technical acceptance criteria being met.
-
   * The walkthrough video must demonstrate how to start the application’s server.
 
   * The walkthrough video must demonstrate GET routes for all users and all thoughts being tested in Insomnia.

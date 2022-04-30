@@ -3,7 +3,8 @@ const { Thought, User } = require('../models');
 const thoughtController = {
   // get all thoughts
   getThoughts(req, res) {
-    Thought.find()
+    Thought.find({})
+      .select('-__v')
       .sort({ createdAt: -1 })
       .then((dbThoughtData) => {
         res.json(dbThoughtData);
@@ -16,6 +17,7 @@ const thoughtController = {
   // get single thought by id
   getSingleThought(req, res) {
     Thought.findOne({ _id: req.params.thoughtId })
+      .select('-__v')
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
           return res.status(404).json({ message: 'No thought with this id!' });
