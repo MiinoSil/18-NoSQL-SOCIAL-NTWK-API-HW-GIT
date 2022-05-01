@@ -5,7 +5,7 @@
 
 [GitHub Repo](https://github.com/MiinoSil/18-NoSQL-SOCIAL-NTWK-API-HW-GIT)
 
-[HEROKU Deploy](https://nosql-social-media-backend-api.herokuapp.com/)
+[HEROKU Deploy](https://nosql-social-media-backend-api.herokuapp.com/) (Paste link into INSOMNIA) 
 
 [HEROKU Repo](https://git.heroku.com/nosql-social-media-backend-api.git)
 
@@ -69,6 +69,8 @@ npm start
 ```
 3. Using a browser, or INSOMNIA, navigate to http://localhost:3001/api/ or [HEROKU deployment](https://nosql-social-media-backend-api.herokuapp.com/api/)
     - routes are accessed at ```/api/users``` and ```/api/thoughts```
+    - routes for single user: ```/api/users/id:``` (id generated upon POST)
+    - routes for single thought: ```/api/thoughts/id:``` (id generated upon POST)
 
 ## Walkthrough Videos
 
